@@ -6,8 +6,8 @@ from trl import SFTConfig, SFTTrainer, DataCollatorForCompletionOnlyLM
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--sample_size", type=float, default=0.01)
-parser.add_argument("--base_model", type=str, default="Qwen/Qwen2.5-7B-Instruct")
+parser.add_argument("--sample_size", type=float, default=0.01, description="Sample size of the safety dataset")
+parser.add_argument("--base_model", type=str, default="Qwen/Qwen2.5-7B-Instruct", description="Base model")
 parser.add_argument("--output_dir", type=str, required=True)
 args = parser.parse_args()
 
