@@ -34,7 +34,7 @@ uv pip install -r requirements.txt
 
 You can set `--sample_size` hyperparameter to decide the percentage of training samples to use from the [STAR-1](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) safety reasoning dataset.
 
-```python3
+```bash
 # train with 5% of STAR-1 safety dataset
 # model will be saved to $OUT directory
 
