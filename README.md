@@ -32,7 +32,7 @@ uv pip install -r requirements.txt
 
 ## 🏃‍♂️ Safety Reasoning Training: Safe-s1.1-7B
 
-Use script of `finetune_qwen_safe.py` to train the Safe-s1.1-7B model that is capable of safety reasoning. You can set `--sample_size` hyperparameter to decide the percentage of samples to use from the [STAR-1](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) safety reasoning dataset.
+You can set `--sample_size` hyperparameter to decide the percentage of training samples to use from the [STAR-1](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) safety reasoning dataset.
 
 ```python3
 # train with 5% of STAR-1 safety dataset
