@@ -17,4 +17,10 @@ uv pip install -r requirements.txt
 ```
 
 
+## 🗂️ Repo Structure
+```bash
+./                  # root repo 
+|___examples/       # example of self-jailbreaking (model outputs)
+|__
+```
 
