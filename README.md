@@ -19,8 +19,13 @@ uv pip install -r requirements.txt
 
 ## 🗂️ Repo Structure
 ```text
-./                  # root repo 
-|___examples/       # example of self-jailbreaking (model outputs)
-|__
+./                      # root repo 
+|___examples/           # example of self-jailbreaking (model outputs)
+|__scripts/
+    |__eval             # safety evaluation (strongreject)
+    |__inference        # model generations
+    |__interp           # mech-interp experiments
+    |__selfjb_detect    # self-jailbreaking detection
+    |__safety_training  # safety reasoning training
 ```
 
