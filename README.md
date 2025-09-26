@@ -17,7 +17,7 @@ uv pip install -r requirements.txt
 ```
 
 
-## 🗂️ Repo Structure
+## 🗂️ Structure
 ```text
 ./                      # root repo 
 |___examples/           # example of self-jailbreaking (model outputs)
@@ -38,7 +38,7 @@ You can set `--sample_size` hyperparameter to decide the percentage of training 
 # train with 5% of STAR-1 safety dataset
 # model will be saved to $OUT directory
 
-python3 ./scripts/safety_training/finetune_qwen_safe.py
+python3 ./scripts/safety_training/train_safe_s1.py
     --sample_size 0.05 \ 
     --output_dir $OUT
 ```
