@@ -42,3 +42,5 @@ python3 ./scripts/safety_training/finetune_qwen_safe.py
     --sample_size 0.05 \ 
     --output_dir $OUT
 ```
+
+🤗 We also uploaded our model weights to our [HuggingFace collection](https://huggingface.co/collections/BatsResearch/safe-s11-68d6577961edca25c9619470).
