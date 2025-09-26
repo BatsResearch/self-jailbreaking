@@ -1,0 +1,7 @@
+accelerate==1.4.0
+datasets==3.3.2
+loguru==0.7.3
+transformers==4.56.1
+termplotlib==0.3.9
+trl==0.15.2
+vllm==0.10.0
