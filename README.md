@@ -29,6 +29,30 @@ uv pip install -r requirements.txt
     |__safety_training/     # safety reasoning training
 ```
 
+## ⛓️‍💥 Identifying Self-Jailbreaking within CoT
+
+| Scripts    | Purpose |
+| -------- | ------- |
+| scripts/inference/vllm_gen{_s1}.py    | Inference on StrongReject prompts |
+| scripts/eval/strongreject_eval.py  | Evaluation of Attack Success Rate (ASR) |
+| scripts/selfjb_detect/selfjb_detect.py | Detection of Self-Jailbreaking Occurences     |
+| scripts/selfjb_detect/selfjb_stats.py | Stats of Self-Jailbreaking Occurences     |
+
+
+```bash
+python3 ./scripts/inference/vllm_gen_s1.py --model_name "simplescaling/s1.1-7B"
+python3 ./scripts/eval/strongreject_eval.py --input_file ./outputs/s1.1-7B-think500-answer200.jsonl
+python3 ./scripts/selfjb_detect/selfjb_detect.py --input_file ./outputs/oai_aisi_eval/oai_aisi-gpt5-labeled_s1.1-7B-think500-answer200.jsonl
+python3 ./scripts/selfjb_detect/selfjb_stats.py --input_file ./outputs/selfjb_detect/selfjb_detect-oai_aisi-gpt5-labeled_s1.1-7B-think500-answer200-start0-end313.jsonl
+
+
+# NOTE: use `vllm_gen.py` for non-s1 models
+# python3 ./scripts/inference/vllm_gen.py --model_name "microsoft/Phi-4-mini-reasoning" (for non-s1 models)
+```
+
+### 💾 Artifacts
+
+`./artifacts` folder stores the artifacts of our model generations and self-jailbreaking annotations.
 
 ## 🏃‍♂️ Safety Reasoning Training: Safe-s1.1-7B
 
