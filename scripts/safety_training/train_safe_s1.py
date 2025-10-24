@@ -8,7 +8,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--sample_size", type=float, default=0.01, description="Sample size of the safety dataset")
 parser.add_argument("--base_model", type=str, default="Qwen/Qwen2.5-7B-Instruct", description="Base model")
-parser.add_argument("--output_dir", type=str, required=True)
+parser.add_argument("--output_dir", type=str, default="./outputs/safe-s1")
 args = parser.parse_args()
 
 
