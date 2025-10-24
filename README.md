@@ -38,6 +38,7 @@ uv pip install -r requirements.txt
 | scripts/selfjb_detect/selfjb_detect.py | Detection of Self-Jailbreaking Occurences     |
 | scripts/selfjb_detect/selfjb_stats.py | Stats of Self-Jailbreaking Occurences     |
 
+Here's an example of the usage of the scripts to annotate on self-jailbreaking instances for the s1.1-7B model.
 
 ```bash
 python3 ./scripts/inference/vllm_gen_s1.py --model_name "simplescaling/s1.1-7B"
