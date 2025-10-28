@@ -1,2 +1,4 @@
 *.private*
 **/*.private*
+outputs/
+scripts/mech_interp/output/

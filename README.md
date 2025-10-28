@@ -55,6 +55,20 @@ python3 ./scripts/selfjb_detect/selfjb_stats.py --input_file ./outputs/selfjb_de
 
 `./artifacts` folder stores the artifacts of our model generations and self-jailbreaking annotations.
 
+## 🔎 Mechanistic Analysis of Self-Jailbreaking CoT
+
+Our work adapts Anthropic's [Persona Vector](https://github.com/safety-research/persona_vectors) repository by extending their steering to support multiple layers and correcting the normalization to be global norm. Follow the installation in `./scripts/mech_interp/persona_vectors` folder for usage.
+
+Here are the scripts for reproducing our results.
+| Scripts    | Purpose |
+| -------- | ------- |
+| scripts/mech_interp/compute_projection_vector.sh    | Obtain compliance and perceived harmfulness vectors |
+| scripts/mech_interp/proj_compliance.sh | Obtaining compliance projection scores (Figure 4)     |
+| scripts/mech_interp/s1_vect_graph(_viz).sh  | Plotting (and visualizing) the perceived harmfulness and compliance scores for Figure 6 |
+| scripts/mech_interp/steering.sh | Steering on multiple layers     |
+
+**💾 Artifacts**: For reproducibility, we provide our projection vectors in `./scripts/mech_interp/persona_vectors/persona_vectors/Qwen2.5-7B-Instruct`.
+
 ## 🏃‍♂️ Safety Reasoning Training: Safe-s1.1-7B
 
 You can set `--sample_size` hyperparameter to decide the percentage of training samples to use from the [STAR-1](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) safety reasoning dataset.
