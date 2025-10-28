@@ -1,6 +1,6 @@
 # Self-Jailbreaking of Reasoning Language Models
 
-This is the official repository for the paper "Self-Jailbreaking: Language Models Can Reason Themselves Out of Safety Alignment After Benign Reasoning Training".
+This is the official repository for the paper "[Self-Jailbreaking: Language Models Can Reason Themselves Out of Safety Alignment After Benign Reasoning Training](https://arxiv.org/abs/2510.20956)".
 
 ## 🚀 Quick Setup
 
@@ -83,3 +83,15 @@ python3 ./scripts/safety_training/train_safe_s1.py
 ```
 
 🤗 We also uploaded our model weights to our [HuggingFace collection](https://huggingface.co/collections/BatsResearch/safe-s11-68d6577961edca25c9619470).
+
+
+## Citation
+```
+@article{yong2025selfjailbreaking,
+    title={Self-Jailbreaking: Language Models Can Reason Themselves Out of Safety Alignment After Benign Reasoning Training}, 
+    author={Zheng-Xin Yong and Stephen H. Bach},
+    year={2025},
+    journal={arXiv preprint arXiv:2510.20956},
+    url={https://arxiv.org/abs/2510.20956}, 
+}
+```
