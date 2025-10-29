@@ -62,7 +62,7 @@ async def get_open_ai_response(task_prompt):
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": task_prompt},
         ],
-        "safety_identifier": "7ff2284fe23cfb14fe4f191f9fb3c5058aab2916922f2a25d6358ea389942f5f",
+        "safety_identifier": ..., # TODO: add your own safety identifier
     }
 
     resp = await _async_requests_post(url, headers=headers, json_payload=payload)
