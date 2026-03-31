@@ -68,7 +68,7 @@ Here are the scripts for reproducing our results.
 | scripts/mech_interp/s1_vect_graph(_viz).sh  | Plotting (and visualizing) the perceived harmfulness and compliance scores for Figure 6 |
 | scripts/mech_interp/steering.sh | Steering on multiple layers     |
 
-**💾 Artifacts**: For reproducibility, we provide our projection vectors in `./scripts/mech_interp/persona_vectors/persona_vectors/Qwen2.5-7B-Instruct`.
+**💾 Artifacts**: For reproducibility, we provide our projection vectors in `./scripts/mech_interp/persona_vectors/results_persona_vectors/Qwen2.5-7B-Instruct`.
 
 ## 🏃‍♂️ Safety Reasoning Training: Safe-s1.1-7B
 
